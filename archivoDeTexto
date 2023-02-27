@@ -2,6 +2,19 @@ Hago cambios en el archivo,y aprovecho para responder las preguntas de los punto
 
 3) No esta porque no se hizo push al remoto, solo se encuentra el cambio "commiteado" de forma local.
 5) No está porque no se hizo un pull al local de los cambios del repositorio remoto.
+8) Sucedio que al tener modificaciones distintas (en remoto comparadas a las de local) del archivo git informa un error y lo explica:
+Actualizaciones fueron rechazadas porque el remoto contiene trabajo que no existe localmente. Esto es causado usualmente por otro repositorio empujando 
+a la misma ref. Quizás quieras integrar primero los cambios remotos (ej. 'git pull ...') antes de volver a hacer push.
+
+Mi solucion fue: 
+1- git config pull.rebase false
+2- git add .
+3- git commit -m "commit para solucion"
+4- git pull
+5- git push -u origin main
+
+Esta solucion subío al remoto mis archivos locales sin eliminar/reemplazar los archivos que habia en el mismo.
+
 
 <<<<<<< HEAD
 Cambio algo distinto en local para el punto 7
