@@ -40,13 +40,13 @@ public class Main {
          * también se podría usar scanner para pedir al usuario los datos que usan las variables.
          *
          */
-        double ingresosMensuales = 400000;
+        int ingresosMensuales = 400000;
         int cantidadDeVehiculos = 3;
         int antiguedadVehiculo = 10;
         int cantidadDeInmuebles = 2;
         boolean poseeEmbarcacionesAeronavesBienesSocietarios = false;
 
-       if (ingresosMensuales >= 489083 || cantidadDeInmuebles >= 3 || (cantidadDeVehiculos>=3 && antiguedadVehiculo <=5) || poseeEmbarcacionesAeronavesBienesSocietarios ){
+       if (ingresosMensuales >= 400000 || cantidadDeInmuebles >= 3 || (cantidadDeVehiculos>=3 && antiguedadVehiculo <=5) || poseeEmbarcacionesAeronavesBienesSocietarios ){
            System.out.println( "Pertenece al segmento de altos ingresos" );
        }else{
            System.out.println("No pertenece al segmento de altos ingresos");
