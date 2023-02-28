@@ -17,14 +17,16 @@ public class Main {
          * Se crea la variable yaImprimio para mostrar por consola una única vez el mensaje
          */
         boolean yaImprimio = false;
+
         /**
          * Se crea el for inverso solicitado en el punto d
          */
         for(int i = numeroFin;i >= numeroInicio; i--){
             if(i % 2 == 0){
-                System.out.println(i );
+                System.out.println(i);
             }
         }
+
         /**
          * Se crea el while puntos a , b , c
          */
@@ -44,7 +46,6 @@ public class Main {
             }
             numeroInicio++;
         }
-
     }
 }
 
