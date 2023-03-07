@@ -3,14 +3,14 @@ public class Ejercicio2 {
         final String abc = "abcdefghijklmnñopqrstuvwxyz ";
         String frase = "hola que tal";
         int desplazamiento = 1; //resultado: ipmbarvfaubm, con desplazamiento de 2: jqncbswgbvcn
-
+        String fraseEncriptada = "";
         for (int i = 0; i < frase.length(); i++) {
             /*Itero sobre frase, para poder meter el carácter en una variable (caracter) usando charAt(i)*/
             char caracter = frase.charAt(i);
             /*  ¿En qué posición de abc se encuentra el carácter? Uso indexOf */
             int posicion = abc.indexOf(caracter);
             if (posicion == -1) {
-                System.out.print(caracter);
+                fraseEncriptada += caracter;
             } else {
                 /*Varible int que contendrá el nuevo valor de la posición después de sumar el desplazamiento de 1 */
                 int nuevaPosicion = posicion + desplazamiento;
@@ -29,13 +29,35 @@ public class Ejercicio2 {
                 } else if (nuevaPosicion < 0) {
                     nuevaPosicion += abc.length();
                 }
-                /*Imprimo el char de abc que está en esa nuevaPosicion*/
-                System.out.print(abc.charAt(nuevaPosicion));
+                /*Lo concateno en la variable frase encriptada*/
+                fraseEncriptada += abc.charAt(nuevaPosicion);
             }
-
         }
+        /*Lo imprimo por fuera del for*/
+        System.out.print("Frase encriptada: " + fraseEncriptada);
+
+        /* Para Desencriptar la frase sigo el camino inverso restando el desplazamiento*/
+        String fraseDesencriptada = "";
+        for (int i = 0; i < fraseEncriptada.length(); i++) {
+            char caracter = fraseEncriptada.charAt(i);
+            int posicion = abc.indexOf(caracter);
+            if (posicion == -1) {
+                fraseDesencriptada += caracter;
+            } else {
+                int nuevaPosicion = posicion - desplazamiento;
+                if (nuevaPosicion >= abc.length()) {
+                    nuevaPosicion -= abc.length();
+                } else if (nuevaPosicion < 0) {
+                    nuevaPosicion += abc.length();
+                }
+                fraseDesencriptada += abc.charAt(nuevaPosicion);
+            }
+        }
+        System.out.println("\nFrase desencriptada: " + fraseDesencriptada);
     }
+
 }
+
 
 /**
  * Consigna:
