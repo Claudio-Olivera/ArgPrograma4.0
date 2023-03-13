@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 import java.util.Scanner;
 
 public abstract class Descuento{
@@ -8,7 +10,7 @@ public abstract class Descuento{
     protected Descuento(boolean tieneDescuento, double porcentajeDescuento, double totalSinDescuentos) {
         this.tieneDescuento = tieneDescuento;
         this.porcentajeDescuento = porcentajeDescuento;
-        this.totalSinDescuentos = totalSinDescuentos;
+       this.totalSinDescuentos = totalSinDescuentos;
     }
 
     protected Descuento() {
@@ -26,8 +28,9 @@ public abstract class Descuento{
             tieneDescuento = true;
         }
         if (tieneDescuento==true){
-            DescuentoPromocional.mostrarDescuentoPromocional();
-            DescuentoPorMayor.mostrarDescuentoPorMayor();
+                DescuentoPromocional.mostrarDescuentoPromocional();
+                DescuentoPorMayor.mostrarDescuentoPorMayor();
+            }
         }
     }
-}
+

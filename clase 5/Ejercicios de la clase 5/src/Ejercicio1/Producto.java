@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 public class Producto {
     private String marca;
     private String descripcion;
@@ -40,7 +42,3 @@ public class Producto {
 
 
 }
-
-
-
-

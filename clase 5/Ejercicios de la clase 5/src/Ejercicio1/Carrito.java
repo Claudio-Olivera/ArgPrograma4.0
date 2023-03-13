@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,10 +39,10 @@ public class Carrito {
 
         ItemCarrito.mostrarSubTotal();
         mostrarTotal();
-    }
+        }
 
-    public static void mostrarTotal(){
+        public static void mostrarTotal(){
         System.out.println("Total de la compra con iva 21% aplicado: $ " + calcularTotal());
-    }
+        }
 
 }

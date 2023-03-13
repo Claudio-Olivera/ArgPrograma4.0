@@ -1,3 +1,4 @@
+package Ejercicio1;
 
 public class DescuentoPorMayor extends Descuento {
 
@@ -10,7 +11,7 @@ public class DescuentoPorMayor extends Descuento {
 
     @Override
     public double calcularDescuento() {
-        totalSinDescuentos = Carrito.calcularTotal();
+       totalSinDescuentos = Carrito.calcularTotal();
         return totalSinDescuentos - (totalSinDescuentos * 0.25);
     }
 
@@ -33,3 +34,8 @@ public class DescuentoPorMayor extends Descuento {
         }
     }
 }
+
+
+
+
+
