@@ -1,0 +1,4 @@
+cantidad,precio,producto
+1,40,Jabón en Polvo
+3,10,Esponjas
+2,100,Chocolates
