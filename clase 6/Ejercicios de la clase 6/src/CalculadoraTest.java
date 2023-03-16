@@ -24,25 +24,26 @@ public class CalculadoraTest {
     }
     @Test
     public void testOne() {
+        //En los @Test, uso la instancia que creé usando @BeforeEach
         double resultado = calculadora.multiplicar(80, 3);
         Assert.assertEquals(240, resultado, 0);
     }
 
     @Test
     public void testTwo() {
-        double resultado = calculadora.dividir(Calculadora.sumar(150, 180), 3);
+        double resultado = calculadora.dividir(calculadora.sumar(150, 180), 3);
         Assert.assertEquals(110, resultado, 0);
     }
 
     @Test
     public void testThree() {
-        double resultado = calculadora.multiplicar(Calculadora.restar(90, 50), 15);
+        double resultado = calculadora.multiplicar(calculadora.restar(90, 50), 15);
         Assert.assertEquals(605, resultado, 0);
     }
 
     @Test
     public void testFour() {
-        double resultado = calculadora.multiplicar(Calculadora.sumar(70, 40), 25);
+        double resultado = calculadora.multiplicar(calculadora.sumar(70, 40), 25);
         Assert.assertEquals(2700, resultado, 0);
     }
 }
