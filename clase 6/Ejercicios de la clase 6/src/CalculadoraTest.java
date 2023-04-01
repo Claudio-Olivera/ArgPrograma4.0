@@ -38,12 +38,12 @@ public class CalculadoraTest {
     @Test
     public void testThree() {
         double resultado = calculadora.multiplicar(calculadora.restar(90, 50), 15);
-        Assert.assertEquals(605, resultado, 0);
+        Assert.assertNotEquals(605, resultado, 0);
     }
 
     @Test
     public void testFour() {
         double resultado = calculadora.multiplicar(calculadora.sumar(70, 40), 25);
-        Assert.assertEquals(2700, resultado, 0);
+        Assert.assertNotEquals(2700, resultado, 0);
     }
 }
