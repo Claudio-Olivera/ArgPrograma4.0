@@ -14,6 +14,7 @@ import org.junit.jupiter.api.BeforeEach;
  * 2. El resultado de sumar 150 y 180, dividido por 3, da 110
  * 3. El resultado de restar 90 y 50, multiplicado por 15, no da 605.
  * 4. El resultado de sumar 70 y 40, multiplicado por 25, no da 2700.
+ *
  */
 public class CalculadoraTest {
     private Calculadora calculadora;
