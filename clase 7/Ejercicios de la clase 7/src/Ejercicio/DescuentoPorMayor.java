@@ -16,7 +16,7 @@ public class DescuentoPorMayor extends Descuento {
     }
 
     public void DescuentoMayorista() {
-        System.out.println("El precio total con un descuento al por mayor del 25% es de: $ " + calcularDescuento());
+        System.out.println("El precio total con un descuento al por mayor del 25% (descuento Fijo) es de: $ " + calcularDescuento());
     }
 
     public static void mostrarDescuentoPorMayor() {
@@ -26,9 +26,9 @@ public class DescuentoPorMayor extends Descuento {
         });
 
         if (contador[0] < 100) {
-            System.out.println("Compra mínima de 100 unidades para aplicar el descuento por mayor");
+            System.out.println("Compra mínima de 100 unidades para aplicar el descuento por mayor (descuento Fijo)");
         } else {
-            System.out.println("La cantidad de productos es: " + contador[0] +" accedes a un descuento al por mayor");
+            System.out.println("La cantidad de productos es: " + contador[0] +" accedes a un descuento al por mayor(descuento Fijo)");
             DescuentoPorMayor porMayor = new DescuentoPorMayor();
             porMayor.DescuentoMayorista();
         }
