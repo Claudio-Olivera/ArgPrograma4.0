@@ -25,7 +25,7 @@ public class Carrito {
         return total;
     }
 
-    public static void mostrarCarro() {
+    public static void mostrarCarro() throws Exception {
         System.out.println("\n\n---------**** PRODUCTOS EN EL CARRITO ****---------");
         Carrito.getItems().forEach(item -> System.out.println(
                 "                     *----*                     " +
@@ -34,7 +34,7 @@ public class Carrito {
                         "\nUnidades :" + item.getCantidad() +
                         "\nPrecio por unidad: $ " + item.getPrecio()));
 
-
+        System.out.println(" ");
         ItemCarrito.mostrarSubTotal();
         mostrarTotal();
         }

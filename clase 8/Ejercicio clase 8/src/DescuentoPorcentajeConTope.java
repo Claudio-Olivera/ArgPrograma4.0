@@ -22,7 +22,7 @@ public class DescuentoPorcentajeConTope extends Descuento {
             System.out.println("El precio total con el descuento de " + porcentajeDescuento + "% es de: $ " + calcularDescuento());
         }
         else{
-            System.out.println("No puede superar el 40 % de descuento");
+            System.out.println("No puedes superar el 40 % de descuento, Ingresa otro numero");
             DescPorcentajeConTope();
         }
     }
@@ -34,9 +34,9 @@ public class DescuentoPorcentajeConTope extends Descuento {
         });
 
         if (contador[0] < 200) {
-            System.out.println("Compra minima de 200 unidades para acceder al descuento ");
+            System.out.println("Necesitas una compra minima de 200 unidades para acceder al descuento (con tope, no mayor a 40%)");
         } else {
-            System.out.println("La cantidad de productos es: " + contador[0] +" accedes a un descuento no mayor del 40%");
+            System.out.println("La cantidad de productos es: " + contador[0] +" accedes a un descuento, no mayor del 40%");
             DescuentoPorcentajeConTope descTope = new DescuentoPorcentajeConTope();
             descTope.DescPorcentajeConTope();
         }
