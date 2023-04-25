@@ -1,0 +1,7 @@
+Hola, mi nombre es Juan y tengo 30 años;
+Nombre: Luis Roberto, Edad: 33, Email: luis@dominio.com;
+Mi correo electrónico es juan.perez@gmail.com;
+Esta línea no coincide con la expresión regular;
+Mi número de teléfono es 123-456-7890;
+Mi dirección es calle 123, ciudad XYZ;
+Nombre: Juan Perez, Edad: 30, Email: juan.perez@dominio.com;
